@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Numbers exercise</title>
+</head>
+<body>
+
+    {% for i in range(1, 11) %}
+        <p>{{ number }} * {{ i }} = {{ number * i }}</p>
+    {% endfor %}
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for key in student_details %}
+                <tr>
+                    <td>{{key}}</td>
+                    <td>{{student_details[key]}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
